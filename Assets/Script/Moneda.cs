@@ -11,7 +11,7 @@ public class Moneda : MonoBehaviour {
 		rb.AddForce (new Vector2 (Random.Range (-200,200), Random.Range (50,200)));
 	}
 
-	void OnCollisionEnter2d(Collider2D col){
+	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "Player") {
 			Destroy(gameObject);
 		}
