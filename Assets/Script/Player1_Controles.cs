@@ -15,7 +15,7 @@ public class Player1_Controles : MonoBehaviour {
 	void Start () {
 		anim = GetComponent<Animator> ();
 		rb = GetComponent<Rigidbody2D> ();
-		gcs = GameObject.Find ("GameControl").GetComponent<GameControlScript> (); 
+		gcs = GameObject.Find ("GameControl").GetComponent<GameControlScript> ();
 	}
 	
 	// Update is called once per frame
