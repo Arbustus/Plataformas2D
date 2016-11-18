@@ -8,9 +8,7 @@ public class rana : MonoBehaviour {
 		anim = GetComponent<Animator> ();
 	}
 
-	void OnTriggerEnter2D (Collider2D objeto){
-		if (objeto.tag == "Player") {
+	void Update (){
 			anim.SetTrigger ("jump");
-		}
 	}
 }
